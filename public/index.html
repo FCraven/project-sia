@@ -13,9 +13,17 @@
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
+        <a-assets>
+            <img id="milkweed-image" src="https://www.gardendesign.com/pictures/images/900x705Max/dream-team-s-portland-garden_6/milkweed-plant-monarch-butterfly-shutterstock-com_12623.jpg">
+          </a-assets>
+
         <a-marker preset="hiro">
+
+            <a-curvedimage src="#milkweed-image" height="3.0" radius="5.7" theta-length="72"
+                 rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage>
+
           <a-text value='Testing Testing'
-                  position='0 2 -3'
+                  position='0 1 -1'
           ></a-text>
           <a-entity
             position="0 0 0"
